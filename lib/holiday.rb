@@ -28,14 +28,12 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-  # return an array of all of the supplies that are used in the winter season
   array = []
-  array.push(holiday_hash[:winter][:Christmas])
-  array.push(holiday_hash[:winter][:new_years])
-
+  a = holiday_hash[:winter][:christmas]
+  b = holiday_hash[:winter][:new_years]
+  array = a + b
   array
 end
-
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash|
