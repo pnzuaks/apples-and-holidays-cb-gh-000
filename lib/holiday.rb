@@ -42,7 +42,19 @@ end
 end
 end
 
-d
+def all_holidays_with_bbq(holiday_hash)
+  array = []
+    holiday_hash.each do |season, hash|
+    hash.each do |holiday, ray|
+      ray.each do |k|
+        if k == "BBQ"
+          array.push(holiday)
+    end
+  end
+  end
+end 
+array
+end
 
 
 
