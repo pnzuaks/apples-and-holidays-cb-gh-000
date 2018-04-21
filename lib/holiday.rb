@@ -33,7 +33,7 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash|
-    puts
+    
     puts season.to_s.capitalize! + ":"
     
     hash.each do |holiday, ray|
