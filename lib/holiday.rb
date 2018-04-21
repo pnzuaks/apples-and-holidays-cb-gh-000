@@ -59,7 +59,8 @@ def all_supplies_in_holidays(holiday_hash)
     end
  
     ray.each do |k|
-        puts k
+        print " "+ k 
+        puts
   end
   end
 end 
