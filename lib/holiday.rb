@@ -33,6 +33,7 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash|
+    puts
     puts season.to_s.capitalize! + ":"
     
     hash.each do |holiday, ray|
@@ -43,7 +44,8 @@ def all_supplies_in_holidays(holiday_hash)
         arr.each do |word|
           word.capitalize!
       end
-       puts arr.join(" ") + ":"
+      puts
+       print arr.join(" ") + ":"
         
         
       elsif holiday.to_s == "fourth_of_july"
@@ -53,18 +55,22 @@ def all_supplies_in_holidays(holiday_hash)
         arr.each do |word|
           word.capitalize!
       end
-       puts arr.join(" ") + ":"
+      puts
+       print arr.join(" ") + ":"
        
-      else  puts holiday.to_s.capitalize! + ":"
+      else  puts
+        print holiday.to_s.capitalize! + ":"
     end
  
     ray.each do |k|
         print " "+ k 
-        puts
+        
   end
+  puts
   end
 end 
 end
+     
 
 def all_holidays_with_bbq(holiday_hash)
   array = []
